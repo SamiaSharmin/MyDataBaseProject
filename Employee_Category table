@@ -4,3 +4,14 @@ EMP_CATEGORY VARCHAR2(50),
 EMP_STATUS VARCHER2(50),
 PRIMARY KEY(EMP_ID)
 );
+
+INSERT INTO  Employee_category VALUES(101,'High Tier','Manager');
+INSERT INTO  Employee_category VALUES(102,'High Tier','Manager');
+INSERT INTO  Employee_category VALUES(103,'Mid Tier','Hairstylist');
+INSERT INTO  Employee_category VALUES(104,'Mid Tier','Hairstylist');
+INSERT INTO  Employee_category VALUES(105,'Mid Tier','Hairstylist');
+INSERT INTO  Employee_category VALUES(106,'Mid Tier','Hairstylist');
+INSERT INTO  Employee_category VALUES(107,'Mid Tier','Manicurist');
+INSERT INTO  Employee_category VALUES(108,'Mid Tier','Manicurist');
+INSERT INTO  Employee_category VALUES(109,'Mid Tier','Massage Therapist');
+INSERT INTO  Employee_category VALUES(110,'Low Tier',' Cleaner');
