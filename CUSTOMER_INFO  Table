@@ -9,3 +9,16 @@ CUSTOMER_GENDER VARCHAR(6),
 EMP_ID NUMBER(6),
 PRIMARY KEY(CUSTOMER_ID)
 );
+
+
+
+INSERT INTO Customer_Info VALUES(3011,'Rafsan Uddin','Mirpur','rafsan@gmail.com','01815934431','Male',20421);
+INSERT INTO Customer_Info VALUES(3012,'Anik Sen','Uttara','aniksen@gmail.com','01815934432','Male',20422);
+INSERT INTO Customer_Info VALUES(3013,'Rafsan Khan','Badda','rafsankhan@gmail.com','01815934433','Male',20423);
+INSERT INTO Customer_Info VALUES(3014,'Shamim Uddin','Banani','Shamim@gmail.com','01815934434','Male',20424);
+INSERT INTO Customer_Info VALUES(3015,'Rifat Khan','Baridhara','rifat01@gmail.com','01815934435','Male',20425);
+INSERT INTO Customer_Info VALUES(3016,'Sharia Arfin Tanim','Badda','arfin@gmail.com','01815934436','Male',20426);
+INSERT INTO Customer_Info VALUES(3017,'Tarek Hasan','Dhanmondi','tarek@gmail.com','01815934437','Male',20427);
+INSERT INTO Customer_Info VALUES(3018,'Mehedi Hasan','Uttara','mehedi@gmail.com','01815934438','Male',20428);
+INSERT INTO Customer_Info VALUES(3019,'Ador Rahaman','Baridhara','ador02@gmail.com','01815934439','Male',20429);
+INSERT INTO Customer_Info VALUES(3020,'Zahid Hasan','Uttara','zahid@gmail.com','01815934444','Male',20430);
