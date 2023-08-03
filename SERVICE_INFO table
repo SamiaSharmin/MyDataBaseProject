@@ -7,3 +7,14 @@ SERVICE_PRICE NUMBER(6),
 APPOINTMENT_ID NUMBER(6),
 PRIMARY KEY(SERVICE_ID)
 )
+
+INSERT INTO  Service_info VALUES(110220,'Haircolor','2 hour','Haircolor',600,10101);
+INSERT INTO  Service_info (service_id,service_name,service_duration,service_price,appointment_id) VALUES(110221,'Haircuts','2 hour',100,10102);
+INSERT INTO  Service_info VALUES(110222,'Condition','1 hour','Dryerchair',300,10103);
+INSERT INTO  Service_info VALUES(110223,'BasFacial','2 hour','Dryerchair',500,10104);
+INSERT INTO  Service_info VALUES(110224,'DelxFacial','3 hour','Dryerchair',700,10105);
+INSERT INTO  Service_info VALUES(110225,'AcneFacial','1 hour','Dryerchair',800,10106);
+INSERT INTO  Service_info (service_id,service_name,service_duration,service_price,appointment_id) VALUES(110226,'Wax','3 hour',6000,10107);
+INSERT INTO  Service_info VALUES(110227,'Haircolor','2 hour','Haircolor',600,10108);
+INSERT INTO  Service_info (service_id,service_name,service_duration,service_price,appointment_id) VALUES(110228,'Haircuts','2 hour',200,10109);
+INSERT INTO  Service_info VALUES(110229,'Wedding','5 hour','Makeup',9000,10110);
