@@ -7,3 +7,14 @@ EMP_PHONENO VARCHAR(11)UNIQUE,
 E_ID NUMBER(3),
 PRIMARY KEY(EMP_ID)
 )
+
+INSERT INTO  Employee_Info VALUES(20421,'Talha Arfin','Chattagram','Male','01815069120',101);
+INSERT INTO  Employee_Info VALUES(20422,'Fahim Rahman ','Rangpur','Male','01815069121',102);
+INSERT INTO  Employee_Info VALUES(20423,'Adit Roy','Dhaka','Male','01815069122',103);
+INSERT INTO  Employee_Info VALUES(20424,'Tanim Hasan','Feni','Male','01815069123',104);
+INSERT INTO  Employee_Info VALUES(20425,'Anik Hasan','Saidpur','Male','01815069124',105);
+INSERT INTO  Employee_Info VALUES(20426,'Zarif Tasnim','Barisal','Male','01815069125',106);
+INSERT INTO  Employee_Info VALUES(20427,'Jamil Khan','Sylhet','Male','01815069126',107);
+INSERT INTO  Employee_Info VALUES(20428,'Rifat Hossian','Dhaka','Male','01815069127',108);
+INSERT INTO  Employee_Info VALUES(20429,'Himel Hasan','Dhaka','Male','01815069128',109);
+INSERT INTO  Employee_Info VALUES(20430,'Rahat Hasan','Chattagram','Male','01815069129',110);
