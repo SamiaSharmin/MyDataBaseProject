@@ -6,3 +6,15 @@ TRANSACTION VARCHAR2(15),
 CUSTOMER_ID NUMBER(6),
 PRIMARY KEY(PAYMENT_ID)
 );
+
+
+INSERT INTO  Customer_Payment(payment_id,payment_date,payment_amount,transaction,customer_id) VALUES(9021,'1-AUG-20',3000,'xxx-yyy-000',3011);
+INSERT INTO  Customer_Payment VALUES(9022,'1-AUG-20',4000,'xxx-yyy-001',3012);
+INSERT INTO  Customer_Payment VALUES(9023,'2-AUG-20',5000,'xxx-yyy-002',3013);
+INSERT INTO  Customer_Payment VALUES(9024,'2-AUG-20',3500,'xxx-yyy-003',3014);
+INSERT INTO  Customer_Payment VALUES(9025,'1-AUG-20',3800,'xxx-yyy-004',3015);
+INSERT INTO  Customer_Payment VALUES(9026,'3-AUG-20',3700,'xxx-yyy-005',3016);
+INSERT INTO  Customer_Payment VALUES(9027,'4-AUG-20',4000,'xxx-yyy-006',3017);
+INSERT INTO  Customer_Payment VALUES(9028,'3-AUG-20',4500,'xxx-yyy-007',3018);
+INSERT INTO  Customer_Payment VALUES(9029,'2-AUG-20',4800,'xxx-yyy-008',3019);
+INSERT INTO  Customer_Payment VALUES(9030,'1-AUG-20',2000,'xxx-yyy-009',3020);
