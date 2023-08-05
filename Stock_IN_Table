@@ -1,8 +1,0 @@
-CREATE TABLE STOCK_USED
-(
-    StockUsed_ID NUMBER(6),
-    StockUsed_QUANTITY VARCHAR(10),
-    StockUsed_DATE date,    
-    EMP_ID NUMBER(6),   
-    PRIMARY KEY (StockUsed_ID)
-   );
