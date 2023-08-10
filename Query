@@ -1,0 +1,44 @@
+1.Show all employee name,address and lenght of their address
+SELECT EMP_NAME, EMP_ADDRESS ,LENGTH(EMP_ADDRESS) AS LENGTH
+FROM EMPLOYEE_INFO
+
+2.Display employee id, max stock in of quantity where max stock in quantity is less then 18
+SELECT EMP_ID, MAX(STOCKIN_QUANTITY)
+FROM STOCK_IN
+GROUP BY EMP_ID
+HAVING MAX(STOCKIN_QUANTITY)<18
+
+3.Display name and appointment date of customer whose appointment date is same as Rifat Khan
+SELECT CUSTOMER_NAME,APPOINTMENT_DATE 
+FROM CUSTOMER_INFO C,APPOINTMENT_INFO A
+WHERE C.EMP_ID = A.EMP_ID
+AND APPOINTMENT_DATE = (SELECT APPOINTMENT_DATE
+                        FROM CUSTOMER_INFO,APPOINTMENT_INFO 
+                        WHERE CUSTOMER_INFO.EMP_ID = APPOINTMENT_INFO.EMP_ID
+                        AND CUSTOMER_NAME = 'Rifat Khan')
+
+4.Write a query to display customer id, name, address where address is not same as Rafsan Uddin
+SELECT CUSTOMER_ID, CUSTOMER_NAME, CUSTOMER_ADDRESS 
+FROM CUSTOMER_INFO
+WHERE CUSTOMER_ADDRESS != (SELECT CUSTOMER_ADDRESS 
+                     FROM CUSTOMER_INFO
+                     WHERE CUSTOMER_NAME = 'Rafsan Uddin')
+
+5.Display service id, service name, service duration, materials use for price 90 to 3000
+SELECT SERVICE_ID, SERVICE_NAME, SERVICE_DURATION, SERVICE_MATERIAL 
+FROM SERVICE_INFO
+WHERE SERVICE_PRICE IN(SELECT SERVICE_PRICE
+                       FROM SERVICE_INFO
+                       WHERE SERVICE_PRICE BETWEEN 90 AND 2000);
+
+6.Display employee name and employee status who live in Dhaka
+SELECT EMP_NAME, EMP_STATUS 
+FROM EMPLOYEE_INFO A,EMPLOYEE_CATEGORY B
+WHERE A.E_ID = B.E_ID
+AND EMP_ADDRESS = 'Dhaka' 
+
+7.Display product name,product date,product quantity,stock in quantity,stock in date of products that price is more than 1500
+SELECT PRODUCT_NAME, PRODUCT_DATE, PRODUCT_QUANTITY, STOCKIN_DATE,STOCKIN_QUANTITY
+FROM PRODUCT_INFO A, STOCK_IN B
+WHERE A.EMP_ID = B.EMP_ID
+AND PRODUCT_COST>1500
